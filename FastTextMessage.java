@@ -58,7 +58,7 @@ public class FastTextMessage {
        // System.out.println(typingInstruction.get('A'));
         int[] typingSequence = new int[message.length()];
 
-        for (int i = 0; i<message.length()-1;i++ ){
+        for (int i = 0; i<message.length();i++ ){
             char j = message.toUpperCase().charAt(i);
             int currentSubSequence = typingInstruction.get(j);
             typingSequence[i] = currentSubSequence;
